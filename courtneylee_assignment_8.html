@@ -1,0 +1,110 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>courtneylee_assignment8</title>
+
+
+<script src="SpryAssets/SpryMenuBar.js" type="text/javascript"></script>
+<script type="text/javascript">
+function findStyleValue(evt,styleProp,IEStyleProp) {
+	var objectID = (evt.target) ? evt.target.id : ((evt.srcElement) ? evt.srcElement.id : null);
+	var object = document.getElementById(objectID);
+	if (object.currentStyle) return object.currentStyle[IEStyleProp]
+	else if (window.getComputedStyle) {
+		compStyle = window.getComputedStyle(object,'');
+		return compStyle.getPropertyValue(styleProp);
+	}
+}
+</script>
+<style type="text/css" media="screen">
+body { 
+	font-size: 1em;
+	font-family: Georgia, "Times New Roman", times, serif;
+	color: #000000;
+	background-color: #ccc;
+	margin: 8px;
+}
+.dropBox {
+	text-align: right;
+	padding: 4px;
+	background-color: #FFFFFF;
+	border: 2px solid #f00;
+	cursor: pointer;
+}
+
+#object1 {
+	position: absolute;
+	z-index: 3;
+	top: 598px;
+	left: 809px;
+	background: white url(rubicon%20.jpg) no-repeat;
+	height:223px;
+	width:275px;
+	}
+
+#object2 {
+	position: absolute;
+	z-index: 2;
+	top: 554px;
+	left: 676px;
+	background: white url(GEE_TARYN_ILL_DINNER.jpg) no-repeat;
+	height:264px;
+	width:295px;
+	}
+
+#object3 {
+	position: absolute;
+	z-index: 1;
+	top: 478px;
+	left: 550px;
+	background: white url(globe%20and%20mail%20.jpg) no-repeat;
+	height:336px;
+	width:364px;
+	}
+
+#object4 {
+	position: absolute;
+	z-index: 0;
+	top: 426px;
+	left: 487px;
+	background: white  url(TGee.jpg) no-repeat;
+	height:395px;
+	width:357px;
+	}
+div.return {position:relative; top:500px; left:70px; }
+</style>
+
+
+
+<link href="clee_assignment8.css" rel="stylesheet" type="text/css" />
+<link href="SpryAssets/SpryMenuBarHorizontal.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="wrapper">
+  <div id="header">
+    <div id="header2">
+      <h1>Taryn Gee</h1>
+      <div id="nav">
+        <ul id="MenuBar1" class="MenuBarHorizontal">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Works</a></li>
+        </ul>
+      </div>
+    
+      <div id="main">
+        <div class="dropBox" id="object1" onclick="alert(findStyleValue(event,'font-size','fontSize'))"> Rubicon</div>
+        <div class="dropBox" id="object2" onclick="alert(findStyleValue(event,'font-size','fontSize'))"> Masquerade dinner</div>
+        <div class="dropBox" id="object3" onclick="alert(findStyleValue(event,'font-size','fontSize'))"> Globe and Mail</div>
+        <div class="dropBox" id="object4" onclick="alert(findStyleValue(event,'font-size','fontSize'))">Taryn Gee</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript">
+var MenuBar1 = new Spry.Widget.MenuBar("MenuBar1", {imgDown:"SpryAssets/SpryMenuBarDownHover.gif", imgRight:"SpryAssets/SpryMenuBarRightHover.gif"});
+</script>
+
+</body>
+</html>

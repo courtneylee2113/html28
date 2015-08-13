@@ -1,0 +1,13 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body { 
+	background-image: url(cargobanner2.jpg);
+	background-repeat:no-repeat;
+	background-color:#666;
+	background-position:center top; 
+	color:#000;
+	background-color: #ccc;
+	margin: 8px;
+}
+
